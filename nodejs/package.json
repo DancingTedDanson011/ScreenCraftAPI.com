@@ -1,0 +1,54 @@
+{
+  "name": "screencraft",
+  "version": "1.0.0",
+  "description": "Official Node.js/TypeScript SDK for the ScreenCraft API - Screenshot and PDF generation service",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "screenshot",
+    "pdf",
+    "api",
+    "screencraft",
+    "web-capture",
+    "html-to-pdf",
+    "url-screenshot",
+    "headless-browser"
+  ],
+  "author": "ScreenCraft",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/screencraft/screencraft-nodejs-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/screencraft/screencraft-nodejs-sdk/issues"
+  },
+  "homepage": "https://screencraftapi.com",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
