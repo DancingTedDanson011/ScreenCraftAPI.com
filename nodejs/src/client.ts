@@ -19,7 +19,7 @@ import {
  * Default configuration values
  */
 const DEFAULT_CONFIG = {
-  baseUrl: 'https://screencraftapi.com/v1',
+  baseUrl: 'https://screencraftapi.com/api/v1',
   timeout: 30000,
   maxRetries: 3,
   retryDelay: 1000,

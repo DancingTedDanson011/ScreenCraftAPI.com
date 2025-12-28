@@ -36,7 +36,7 @@ import (
 
 const (
 	// DefaultBaseURL is the default ScreenCraft API base URL.
-	DefaultBaseURL = "https://screencraftapi.com/v1"
+	DefaultBaseURL = "https://screencraftapi.com/api/v1"
 
 	// DefaultTimeout is the default HTTP client timeout.
 	DefaultTimeout = 60 * time.Second

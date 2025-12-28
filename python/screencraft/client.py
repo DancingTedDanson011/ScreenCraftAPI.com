@@ -64,7 +64,7 @@ class ScreenCraft:
         retry_backoff: Backoff multiplier for retries (default: 2).
     """
 
-    DEFAULT_BASE_URL = "https://screencraftapi.com/v1"
+    DEFAULT_BASE_URL = "https://screencraftapi.com/api/v1"
     DEFAULT_TIMEOUT = 60
     DEFAULT_MAX_RETRIES = 3
     DEFAULT_RETRY_DELAY = 1.0
@@ -496,7 +496,7 @@ class AsyncScreenCraft:
         retry_backoff: Backoff multiplier for retries (default: 2).
     """
 
-    DEFAULT_BASE_URL = "https://screencraftapi.com/v1"
+    DEFAULT_BASE_URL = "https://screencraftapi.com/api/v1"
     DEFAULT_TIMEOUT = 60
     DEFAULT_MAX_RETRIES = 3
     DEFAULT_RETRY_DELAY = 1.0
