@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	screenshotEndpoint = "/screenshot"
+	screenshotEndpoint = "/screenshots"
 )
 
 // Screenshot captures a screenshot of the specified URL.

@@ -19,7 +19,7 @@ import {
  * Default configuration values
  */
 const DEFAULT_CONFIG = {
-  baseUrl: 'https://screencraftapi.com/api/v1',
+  baseUrl: 'https://screencraftapi.com/v1',
   timeout: 30000,
   maxRetries: 3,
   retryDelay: 1000,
@@ -98,7 +98,7 @@ export class ScreenCraftClient {
     this.validateUrl(options.url);
 
     return this.executeWithRetry(async () => {
-      const response = await this.httpClient.post<SyncResponse>('/screenshot', options);
+      const response = await this.httpClient.post<SyncResponse>('/screenshots', options);
       return response.data;
     });
   }
@@ -132,7 +132,7 @@ export class ScreenCraftClient {
     this.validateWebhook(options.webhook);
 
     return this.executeWithRetry(async () => {
-      const response = await this.httpClient.post<AsyncResponse>('/screenshot/async', options);
+      const response = await this.httpClient.post<AsyncResponse>('/screenshots', { ...options, async: true });
       return response.data;
     });
   }
@@ -169,7 +169,7 @@ export class ScreenCraftClient {
     this.validateUrl(options.url);
 
     return this.executeWithRetry(async () => {
-      const response = await this.httpClient.post<SyncResponse>('/pdf', options);
+      const response = await this.httpClient.post<SyncResponse>('/pdfs', options);
       return response.data;
     });
   }
@@ -201,7 +201,7 @@ export class ScreenCraftClient {
     this.validateWebhook(options.webhook);
 
     return this.executeWithRetry(async () => {
-      const response = await this.httpClient.post<AsyncResponse>('/pdf/async', options);
+      const response = await this.httpClient.post<AsyncResponse>('/pdfs', { ...options, async: true });
       return response.data;
     });
   }

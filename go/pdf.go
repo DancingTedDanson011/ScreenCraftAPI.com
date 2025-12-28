@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	pdfEndpoint = "/pdf"
+	pdfEndpoint = "/pdfs"
 )
 
 // PDF generates a PDF from the specified URL.
